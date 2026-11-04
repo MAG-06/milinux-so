@@ -1,0 +1,6 @@
+linux-*/
+build-*/
+*.tar.xz
+initramfs/dev/
+initramfs.cpio.gz
+src/init

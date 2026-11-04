@@ -1,0 +1,6 @@
+default corrida 1: 6,00 s
+default corrida 2: 6,00 s
+default corrida 3: 5,00 s
+tiny corrida 1: 2,00 s
+tiny corrida 2: 2,00 s
+tiny corrida 3: 3,00 s

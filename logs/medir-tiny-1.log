@@ -1,0 +1,119 @@
+c[?7l[2J[0mSeaBIOS (version 1.17.0-debian-1.17.0-1ubuntu1)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+0EFC8BD0+0EF08BD0 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from ROM..c[?7l[2JLinux version 6.18.60-equipo03-tiny (root@mag-VirtualBox) (gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0, GNU ld (GNU Binutils for Ubuntu) 2.46) #1 Tue Nov  3 16:27:27 -05 2026
+Command line: console=ttyS0 medir
+BIOS-provided physical RAM map:
+BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+BIOS-e820: [mem 0x0000000000100000-0x000000000ffdffff] usable
+BIOS-e820: [mem 0x000000000ffe0000-0x000000000fffffff] reserved
+BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+BIOS-e820: [mem 0x000000fd00000000-0x000000ffffffffff] reserved
+NX (Execute Disable) protection: active
+APIC: Static calls initialized
+tsc: Fast TSC calibration failed
+last_pfn = 0xffe0 max_arch_pfn = 0x400000000
+x86/PAT: PAT support disabled because CONFIG_X86_PAT is disabled in the kernel.
+x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
+found SMP MP-table at [mem 0x000f5460-0x000f546f]
+RAMDISK: [mem 0x0ff89000-0x0ffdffff]
+Intel MultiProcessor Specification v1.4
+MPTABLE: OEM ID: BOCHSCPU
+MPTABLE: Product ID: 0.1         
+MPTABLE: APIC at: 0xFEE00000
+Zone ranges:
+  DMA32    [mem 0x0000000000001000-0x000000000ffdffff]
+  Normal   empty
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x0000000000001000-0x000000000009efff]
+  node   0: [mem 0x0000000000100000-0x000000000ffdffff]
+Initmem setup node 0 [mem 0x0000000000001000-0x000000000ffdffff]
+On node 0, zone DMA32: 1 pages in unavailable ranges
+On node 0, zone DMA32: 97 pages in unavailable ranges
+On node 0, zone DMA32: 32 pages in unavailable ranges
+Intel MultiProcessor Specification v1.4
+MPTABLE: OEM ID: BOCHSCPU
+MPTABLE: Product ID: 0.1         
+MPTABLE: APIC at: 0xFEE00000
+Processor #0 (Bootup-CPU)
+IOAPIC[0]: apic_id 0, version 32, address 0xfec00000, GSI 0-23
+Processors: 1
+CPU topo: Max. logical packages:   1
+CPU topo: Max. logical dies:       1
+CPU topo: Max. dies per package:   1
+CPU topo: Max. threads per core:   1
+CPU topo: Num. cores per package:     1
+CPU topo: Num. threads per package:   1
+CPU topo: Allowing 1 present CPUs plus 0 hotplug CPUs
+[mem 0x10000000-0xfffbffff] available for PCI devices
+clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+Kernel command line: console=ttyS0 medir
+Unknown kernel command line parameters "medir", will be passed to user space.
+printk: log buffer data + meta data: 131072 + 458752 = 589824 bytes
+Dentry cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Inode-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Built 1 zonelists, mobility grouping on.  Total pages: 65406
+mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+SLUB: HWalign=64, Order=0-1, MinObjects=0, CPUs=1, Nodes=1
+NR_IRQS: 4352, nr_irqs: 48, preallocated irqs: 16
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+Console: colour VGA+ 80x25
+printk: legacy console [ttyS0] enabled
+APIC: Switch to symmetric I/O mode setup
+..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+tsc: Unable to calibrate against PIT
+tsc: No reference (HPET/PMTIMER) available
+tsc: Marking TSC unstable due to could not calculate TSC khz
+Calibrating delay loop... 221.79 BogoMIPS (lpj=443584)
+Last level iTLB entries: 4KB 512, 2MB 255, 4MB 127
+Last level dTLB entries: 4KB 512, 2MB 255, 4MB 127, 1GB 0
+CPU: AMD QEMU Virtual CPU version 2.5+ (family: 0xf, model: 0x6b, stepping: 0x1)
+mitigations: Enabled attack vectors: SMT mitigations: off
+Spectre V2 : Vulnerable
+Spectre V1 : Vulnerable: __user pointer sanitization and usercopy barriers only; no swapgs barriers
+x86/fpu: x87 FPU will use FXSAVE
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512 (order: 0, 4096 bytes, linear)
+Mountpoint-cache hash table entries: 512 (order: 0, 4096 bytes, linear)
+Performance Events: PMU not available due to virtualization, using software events only.
+signal: max sigframe size: 1040
+APIC timer disabled due to verification failure
+Memory: 246936K/261624K available (3680K kernel code, 767K rwdata, 356K rodata, 548K init, 732K bss, 13760K reserved, 0K cma-reserved)
+devtmpfs: initialized
+clocksource: Switched to clocksource refined-jiffies
+platform rtc_cmos: registered platform RTC device (no PNP device found)
+Unpacking initramfs...
+workingset: timestamp_bits=62 max_order=16 bucket_order=0
+Freeing initrd memory: 348K
+Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+serial8250: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+serio: i8042 KBD port at 0x60,0x64 irq 1
+serio: i8042 AUX port at 0x60,0x64 irq 12
+input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input0
+Freeing unused kernel image (initmem) memory: 548K
+Write protecting the kernel read-only data: 6144k
+Freeing unused kernel image (text/rodata gap) memory: 412K
+Freeing unused kernel image (rodata/data gap) memory: 1692K
+Run /init as init process
+
+========================================
+  Equipo 03 - Mi primer init
+========================================
+PID: 1   PPID: 0
+Argumentos recibidos del kernel (argc=2):
+  argv[0] = /init
+  argv[1] = medir
+Variables de entorno recibidas del kernel:
+  HOME=/
+  TERM=linux
+Modo medir: reiniciando para que QEMU termine.
+input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input2
+reboot: Restarting system
+reboot: machine restart

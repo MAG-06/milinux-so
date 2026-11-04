@@ -1,0 +1,21 @@
+c[?7l[2J[0mSeaBIOS (version 1.17.0-debian-1.17.0-1ubuntu1)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+0EFC8BD0+0EF08BD0 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from ROM..c[?7l[2J
+========================================
+  Equipo 03 - Mi primer init
+========================================
+PID: 1   PPID: 0
+Argumentos recibidos del kernel (argc=2):
+  argv[0] = /init
+  argv[1] = hola
+Variables de entorno recibidas del kernel:
+  HOME=/
+  TERM=linux
+  EQUIPO=03
+init sigue vivo. Presione Ctrl+a y luego x para cerrar QEMU.
+qemu-system-x86_64: terminating on signal 15 from pid 5611 (/usr/bin/bash)
