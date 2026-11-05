@@ -4,3 +4,8 @@ build-*/
 initramfs/dev/
 initramfs.cpio.gz
 src/init
+busybox-*/
+*.tar.bz2
+rootfs/*
+!rootfs/init
+rootfs.cpio.gz

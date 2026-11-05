@@ -1,0 +1,22 @@
+#!/bin/sh
+# Shebang: el kernel corre este script con el sh de BusyBox (por eso necesita CONFIG_BINFMT_SCRIPT=y)
+export PATH=/sbin:/usr/sbin:/bin:/usr/bin
+# PATH: carpetas donde estan los symlinks de BusyBox, para poder llamar mount, ls, etc. sin ruta completa
+mount -t proc     proc     /proc
+# Monta procfs en /proc: el kernel expone ahi los procesos y su info (ps, meminfo, cpuinfo dependen de esto)
+mount -t sysfs    sysfs    /sys
+# Monta sysfs en /sys: el arbol de dispositivos, drivers y clases que el kernel detecto
+mount -t devtmpfs devtmpfs /dev
+# Monta devtmpfs en /dev: el kernel crea solo los nodos de dispositivo (null, zero, ttyS0...)
+hostname milinux-03
+# Le pone nombre a la maquina (se ve en el prompt y en uname -a)
+echo
+# Linea en blanco para que el mensaje se lea mejor
+echo "=== Mi Linux 03: espacio de usuario con BusyBox ==="
+# Encabezado del sistema
+echo "Kernel: $(uname -r)   Procesos: $(ls -d /proc/[0-9]* | wc -l)"
+# Muestra la version del kernel y cuantos procesos hay (cuenta las carpetas numericas de /proc)
+echo
+# Otra linea en blanco
+exec setsid cttyhack sh
+# exec reemplaza este script por el shell sin crear proceso nuevo: el shell queda como PID 1. setsid abre sesion nueva y cttyhack le da una terminal de control real (job control)
